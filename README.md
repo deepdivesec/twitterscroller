@@ -1,6 +1,6 @@
 # Twitter Scroller Project
 
-##Install
+## Install
 pip install -r requirements.txt
 
 ## 1) Gather Tweets, put into database
