@@ -1,0 +1,50 @@
+[Twitter]
+consumer_key =
+consumer_secret =
+tweetcount = 50
+accounts =
+    SeekingAlpha
+    MarketWatch
+    CNBC
+    WSJmarkets
+    Stocktwits
+    Bloomberg
+    FT
+    TheEconomist
+    barronsonline
+    markets
+    WSJ
+    YahooFinance
+    BusinessInsider
+    FoxBusiness
+    Nasdaq
+    SquawkStreet
+    BusinessTimes
+    kedglobal
+    CNBCi
+    economics
+    BloombergAsia
+
+[Mongo]
+user =
+pass =
+server =
+port =
+db =
+collection =
+
+[Postgres]
+host =
+port =
+user =
+password =
+db =
+table =
+interval =
+
+[Logfile]
+path =
+
+[Timezone]
+tzoffset = -4
+

@@ -1,0 +1,22 @@
+#scrollbox {
+    width: 100%;
+    height: 95vh;
+    border: solid 1px #C0C0C0;
+    overflow: hidden;
+    
+}
+#tscroll {
+  height: 180px;
+  background: #212529;
+  color: white;
+  width: 100%;
+  border: 3px solid #212529;
+  font-size: 36px;
+  padding: 5px;
+}
+#tdetails {
+  padding: 5px;
+  font-size: 24px;
+  background: #212529;
+  color: white;
+}
