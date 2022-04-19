@@ -7,8 +7,6 @@ from sys import exit
 from functools import lru_cache
 
 config = configparser.ConfigParser()
-# when out of testbed, ../conf.ini
-# need better way of referencing relative path
 config.read('../conf.ini')
 
 pghost = config['Postgres']['host']
@@ -82,29 +80,5 @@ def feeds(request):
         data.update({acctName: acctDict})
 
     return render(request, "twitter/feeds.html", {'data': data})
-
-#------------------------
-# testbed for code
-# try:
-#     conn = psycopg2.connect(f"dbname={pgdb} user={pguser} password={pgpass} host={pghost}")
-# except Exception as e:
-#     print(e)
-#     exit("Unable to connect to postgres database!")
-# cur = conn.cursor()
-# utcnow = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-# # select distinct on (acctid), tjson from twitter where acctid in {list from conf.ini}
-# cur.execute(f"SELECT accname, hashtags, symbols, ttext, created from twitter where created >= CURRENT_TIMESTAMP AT TIME ZONE 'UTC' - INTERVAL '5 minutes';")
-# accounts = cur.fetchall()
-# for account in accounts:
-#     #print(account)
-#     print("acct: ", account[0])
-#     print("hashtags: ", account[1])
-#     print("symbols: ", account[2])
-#     print("ttext: ", account[3])
-#     local = account[4] + timedelta(hours=tzoffset)
-#     print("created: ", local)
-#     print(type(local))
-#------------------------
-
 
 
