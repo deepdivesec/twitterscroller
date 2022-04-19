@@ -11,7 +11,7 @@ from sys import exit
 
 # config parser
 config = configparser.ConfigParser()
-config.read('conf.ini')
+config.read('/absolute/path/to/conf.ini')
 consumer_key = config['Twitter']['consumer_key']
 consumer_secret = config['Twitter']['consumer_secret']
 logfile = config['Logfile']['path']

@@ -1,8 +1,8 @@
 # Twitter Scroller Project
 
 ## Install
-pip install -r requirements.txt
-
+- pip install -r requirements.txt
+- in twitter-gather.py, line 14, enter absolute path to conf.ini so cron can find config file
 ## 1) Gather Tweets, put into database
 set twitter-gather.py to run in a cron job every 5 minutes:
 >*/5 * * * * /path/to/twitter-gather.py
